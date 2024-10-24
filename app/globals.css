@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-pretendard font-bold;
+  }
+}
+
+@layer base {
+  /* width */
+  ::-webkit-scrollbar {
+    @apply w-1;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-inherit;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded-xl;
+  }
+
+}
+
+body {
+  @apply bg-black text-white;
+}
